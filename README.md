@@ -6,11 +6,13 @@ essentially spectrograms, created by 30-second clips of the music pieces. The sp
 analyzed using BiLSTM Model.
 
 # Example of a Spectogram
+
 ![The spectrograms and chromagrams of samples #80238 and #69593 respectively.](spec.png)
 
 # Data loading and analysis
 Before implementing any models, the data were preprocessed. More specifically,
 some classes that were similar were combined to make the classification problem a bit easier.
+
 ![Histograms that show the number of the samples that belong to each class, before and
 after processing the data.](genr.png)
 
@@ -28,7 +30,7 @@ Using beat-synced spectograms as input allows the BiLSTM model to make use of th
 structure of the music, which can be an important feature for tasks such as music classification
 
 ![ Training and Validation Loss per epoch of training using beat-synced spectograms (Batch
-size 64).](spec.png)
+size 64).](train.png)
 
 # Some demo Results
 
